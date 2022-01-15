@@ -15,7 +15,7 @@ router.post('/upload-file', (req, res) =>{
 
     if (file){
         console.log(fileName);
-        file.mv(path.join(__dirname, "../../uploads/" + fileName), (err) =>{
+        file.mv(path.join(__dirname, "../public/uploads/" + fileName), (err) =>{
             if(err){
                 res.send(err)
             }else{

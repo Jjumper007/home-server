@@ -56,6 +56,6 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 
 //Server is listening
-app.listen(app.get('port'), () => {
+app.listen(app.get('port'), '192.168.1.35', () => {
     console.log('App listening at port ', app.get('port'))
 })

@@ -1,2 +1,11 @@
-<h1>Home server</h1>
-
+<h1 class="title">Home server</h1>
+<div class="image-container">
+    {{#each images}}
+        <a href="/uploads/{{this.name}}" download="{{this.name}}">
+            <img src="/uploads/{{this.name}}" alt="{{this.name}}" class="image">        
+        </a>
+        {{!-- <a href="/upload-file">
+            <img src="/uploads/{{this.name}}" alt="{{this.name}}" class="image">
+        </a> --}}
+    {{/each}}
+</div>
